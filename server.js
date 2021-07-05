@@ -19,7 +19,6 @@ const getKey=(header, callback)=>{
       callback(null, signingKey);
     });
 }
-
 app.get('/authorize',(req,res)=>{
   const token =req.headers.authorization.split(' ')[1];
   console.log(token);
